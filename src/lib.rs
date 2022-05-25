@@ -125,9 +125,27 @@ pub fn trans(line: &str) -> String {
     let mut out = String::new();
 
     let mut context = &Context::Other;
+    let mut skip_tag = false; //assume open/close tags are on the same line
 
     while index < line.len() {
         let mut found_match = false;
+
+        match &line[index..index + 1] {
+            "<" => skip_tag = true,
+            ">" => skip_tag = false,
+            _ => {}
+        }
+
+        if skip_tag {
+            match context {
+                Context::Consonant => out.push(HALANT),
+                _ => {}
+            }
+            out.push_str(&line[index..index + 1]);
+            index = index + 1;
+            context = &Context::Other;
+            continue;
+        }
 
         for k in map.keys().rev() {
             if line[index..].starts_with(k) {
@@ -143,6 +161,7 @@ pub fn trans(line: &str) -> String {
                 continue;
             }
         }
+
         if !found_match {
             match context {
                 Context::Consonant => out.push(HALANT),
