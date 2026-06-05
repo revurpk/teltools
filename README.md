@@ -54,3 +54,8 @@ hariH om ||
 
 #### Example command invocation
 `$ cargo run --bin hin2tel in.hin > out.tel`
+
+## License
+
+Copyright 2026 Pradyumna Revur.
+Licensed under the **Apache License 2.0** — see [`LICENSE`](LICENSE) and [`NOTICE`](NOTICE).

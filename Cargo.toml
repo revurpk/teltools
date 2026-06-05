@@ -3,6 +3,9 @@ name = "teltools"
 version = "0.1.0"
 authors = ["Pradyumna Revur <prevur@gmail.com>"]
 edition = "2018"
+license = "Apache-2.0"
+description = "Telugu / Devanagari transliteration tools (English RTS → Telugu, Telugu ↔ Devanagari)"
+repository = "https://github.com/revurpk/teltools"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

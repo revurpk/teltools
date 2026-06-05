@@ -1,0 +1,8 @@
+teltools
+Copyright 2026 Pradyumna Revur
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+teltools transliterates between English (RTS), Telugu, and Devanagari.
+It has no third-party runtime dependencies; it builds against the Rust
+standard library only.

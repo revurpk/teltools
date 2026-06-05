@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: Apache-2.0
+// Copyright 2026 Pradyumna Revur
+
 /// Converts a telugu unicode character to devanagari.
 ///
 /// # Examples

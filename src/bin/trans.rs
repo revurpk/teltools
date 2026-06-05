@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0
+// Copyright 2026 Pradyumna Revur
 use std::fs::File;
 use std::io;
 use std::io::BufRead;
